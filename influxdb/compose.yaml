@@ -1,0 +1,17 @@
+# compose.yaml
+services:
+  influxdb2:
+    image: influxdb:2.7.10
+    ports:
+      - 28086:8086
+      - 28088:8088
+    volumes:
+      - ./data:/var/lib/influxdb2 # change ./data to a location where you want persisted data to be stored on host machine
+      - ./influx-configs:/etc/influxdb2/
+    networks:
+      - influxdb_nk
+
+networks:
+    influxdb_nk:
+        name: influxdb_nk
+        external: true

@@ -1,0 +1,16 @@
+services:
+  grafana:
+    image: grafana/grafana:11.3.1
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+     - '23000:3000'
+    networks:
+     - influxdb_nk
+    volumes:
+     - ./grafana-storage:/var/lib/grafana
+
+networks:
+    influxdb_nk:
+        name: influxdb_nk
+        external: true

@@ -1,0 +1,2 @@
+# this should be run once before running any of the underlying components/setup
+sudo docker network create influxdb_nk # info on this found here https://community.grafana.com/t/connection-refused-error-reading-buckets/71749/22

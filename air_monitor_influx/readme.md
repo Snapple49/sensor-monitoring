@@ -1,0 +1,3 @@
+This project can be built with the Arduino IDE, you'll have to read up on how exactly to achieve this depending on your device. This project was created for the seeed wio link specifically, https://www.seeedstudio.com/Wio-Link.html. Libraries for the various sensors are available at https://wiki.seeedstudio.com/Grove_System/, as well as instructions on setting up Arduino IDE for programming the device.
+
+There is a library with an influxdb client which makes this really simple, see https://github.com/tobiasschuerg/InfluxDB-Client-for-Arduino
