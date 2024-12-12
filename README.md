@@ -10,3 +10,7 @@ Suggested order of setting up this stack first time:
 6. Configure grafana user/password, and add the data source. The IP of influx db will be the docker internal network IP of the service, since the two are created with a network option in the docker compose files. The IP is found by typing 'docker network inspect influxdb_nk'
 
 Done! Now you can start sending data to influx and create dashboards in grafana. Easiest way to stop and start services is to navigate to either grafana/ or influxdb/ and run 'docker compose down' or 'docker compose up -d' respectively.
+
+Below is an example of my setup with grafana, based on the dashboard json available in grafana/
+
+![Picture of a grafana metrics dashboard](example.png)
